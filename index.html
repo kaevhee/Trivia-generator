@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
+    <div class="container">
     <header>
       <h1>AI Trivia generator</h1>
     </header>
@@ -18,10 +19,12 @@
           autofocus
           required
           autocomplete="off"
+          class="input"
         />
-        <input type="submit" />
+        <input type="submit" class="submit-button" 
+        value="Submit"/>
       </form>
-      <div>
+      <div class="trivia">
         Which freezes faster: hot or cold water?
         <br />
         What is the only planet in our solar system to rotate clockwise on its
@@ -41,6 +44,7 @@
         >on Netlify</a
       >
     </footer>
+</div>
     <script src="src/index.js"></script>
   </body>
 </html>
