@@ -11,13 +11,14 @@
   <body>
     <div class="container">
     <header>
-      <h1>AI Trivia question generator</h1>
+      <h1>AI trivia question generator</h1>
     </header>
     <main>
+      <div class="form-container">
       <form id="trivia-generator">
         <input
           type="text"
-          placeholder="Enter the topic of trivia questions"
+          placeholder="Enter the subject of a trivia question..."
           autofocus
           required
           autocomplete="off"
@@ -27,7 +28,10 @@
         <input type="submit" class="submit-button" 
         value="Submit"/>
       </form>
-      <div class="trivia" id="trivia-question"></div>
+      <div class="example">i.e maths, facts or health</div>
+    </div>
+
+      <div class="trivia hidden" id="trivia-question"></div>
       </div>
     </main>
     <footer>
