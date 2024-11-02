@@ -55,15 +55,39 @@ h1 {
 main {
   margin-bottom: 30px;
 }
-
-form {
-  padding: 30px;
+.form-container {
+  padding: 15px 20px;
   background-color: #ffffff;
   box-shadow: 1px 7px 7px grey;
-
   border-radius: 10px;
-  display: flex;
   margin-bottom: 30px;
+}
+.example {
+  line-height: 1.5;
+  font-size: 11px;
+  opacity: 0.6;
+  margin-top: 5px;
+}
+
+form {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
+.generating{
+  animation:blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation{
+  to{
+    visibility:hidden
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 footer {
   text-align: center;
